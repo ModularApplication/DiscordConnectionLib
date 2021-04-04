@@ -20,14 +20,19 @@ version = '0.2'
 repositories {
     mavenCentral()
     jcenter()
+    maven {
+        url 'https://jitpack.io'
+        credentials { username authToken }
+    }
 }
 
 dependencies {
 //    shadow("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.10") {
 //        transitive = false
 //    }
-    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1'
+//    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1'
     implementation 'net.dv8tion:JDA:4.2.0_228'
+    shadow 'com.github.ModularApplication:ModuleBase:0.0.1'
 }
 
 sourceSets {
