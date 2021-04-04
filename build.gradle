@@ -26,8 +26,8 @@ dependencies {
 //    shadow("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.10") {
 //        transitive = false
 //    }
-    api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1'
-    api 'net.dv8tion:JDA:4.2.0_228'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1'
+    implementation 'net.dv8tion:JDA:4.2.0_228'
 }
 
 sourceSets {
