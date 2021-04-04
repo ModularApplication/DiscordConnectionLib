@@ -1,0 +1,40 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:6.1.0'
+    }
+}
+
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
+    id 'com.github.johnrengelman.shadow' version '6.1.0'
+}
+
+apply plugin: 'com.github.johnrengelman.shadow'
+
+group = 'com.zxerrinor'
+version = '0.1'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+//    shadow("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.4.10") {
+//        transitive = false
+//    }
+    api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1'
+    api 'net.dv8tion:JDA:4.2.0_228'
+}
+
+sourceSets {
+    main.kotlin.srcDir "src/main/kotlin"
+    main.resources.srcDir "src/main/resources"
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = '1.8'
+}
