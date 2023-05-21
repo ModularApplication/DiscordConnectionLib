@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.ModularApplication:ModuleBase:v0.0.2" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.github.ModularApplication" artifactId="ModuleBase" version="v0.0.2" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.ModularApplication/ModuleBase/v0.0.2/2dff071275dc622d263cfaec1c67bc3ed5978393/ModuleBase-v0.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

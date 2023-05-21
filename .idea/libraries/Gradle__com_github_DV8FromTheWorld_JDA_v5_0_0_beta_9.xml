@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.DV8FromTheWorld:JDA:v5.0.0-beta.9" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.github.DV8FromTheWorld" artifactId="JDA" version="v5.0.0-beta.9" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.DV8FromTheWorld/JDA/v5.0.0-beta.9/b2286f77e6d0fa774095da2fe808bd37df3a9c7c/JDA-v5.0.0-beta.9.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.DV8FromTheWorld/JDA/v5.0.0-beta.9/9f2455b4e1a4447e8da67b09694f7b2236f8124/JDA-v5.0.0-beta.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

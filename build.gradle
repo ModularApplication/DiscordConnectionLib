@@ -1,25 +1,37 @@
 buildscript {
     repositories {
-        jcenter()
+        mavenCentral()
+        gradlePluginPortal()
     }
     dependencies {
-        classpath 'com.github.jengelman.gradle.plugins:shadow:6.1.0'
+        classpath 'com.github.johnrengelman:shadow:8.1.1'
     }
 }
 
 plugins {
-    id 'org.jetbrains.kotlin.jvm' version '1.4.10'
-    id 'com.github.johnrengelman.shadow' version '6.1.0'
+    id 'org.jetbrains.kotlin.jvm' version '1.8.20'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
 }
 
-apply plugin: 'com.github.johnrengelman.shadow'
+sourceCompatibility = 1.8
 
 group = 'com.zxerrinor'
-version = '0.3'
+version = '0.4'
+
+kotlin {
+    sourceSets.configureEach {
+        languageSettings {
+            languageVersion = "1.9"
+        }
+    }
+}
+
+compileKotlin {
+    kotlinOptions.jvmTarget = '1.8'
+}
 
 repositories {
     mavenCentral()
-    jcenter()
     maven {
         url 'https://jitpack.io'
         credentials { username authToken }
@@ -31,15 +43,11 @@ dependencies {
 //        transitive = false
 //    }
 //    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1'
-    implementation 'net.dv8tion:JDA:4.2.0_228'
-    shadow 'com.github.ModularApplication:ModuleBase:0.0.1'
+    shadow 'com.github.ModularApplication:ModuleBase:v0.0.2'
+    implementation 'com.github.DV8FromTheWorld:JDA:v5.0.0-beta.9'
 }
 
 sourceSets {
     main.kotlin.srcDir "src/main/kotlin"
     main.resources.srcDir "src/main/resources"
-}
-
-compileKotlin {
-    kotlinOptions.jvmTarget = '1.8'
 }
